@@ -1,0 +1,48 @@
+html, body{
+  height: 100%;
+  width:100%;
+  overflow: hidden;
+  margin: 0;
+}
+
+.sky{
+  height: 100%;
+  background: skyblue;
+  position: relative;
+}
+
+.earth{
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  width: 350px;
+  height: 350px;
+  background: url("img/earth.jpg");
+  background-size: cover;
+  border-radius: 50%;
+}
+
+.mario{
+  position: absolute;
+  top: calc(50% - 65px);
+  left: calc(50% - 60px);
+  animation: around 10s linear infinite;
+  z-index: 5;
+  transform: rotate(90deg);
+}
+
+@keyframes around {
+  from {
+    transform: rotate(0deg) translateX(200px) rotate(90deg);
+  }
+  to {
+    transform: rotate(360deg) translateX(200px) rotate(90deg);
+  }
+}
+
+
+
+
+
+
