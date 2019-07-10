@@ -32,12 +32,31 @@ html, body{
   transform: rotate(90deg);
 }
 
+.sun{
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
+.sun img{
+  width: 200px;
+  animation: rotate 6s linear infinite;
+}
+
 @keyframes around {
   from {
     transform: rotate(0deg) translateX(200px) rotate(90deg);
   }
   to {
     transform: rotate(360deg) translateX(200px) rotate(90deg);
+  }
+}
+
+@keyframes rotate {
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
   }
 }
 
